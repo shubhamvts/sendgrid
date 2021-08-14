@@ -13,7 +13,7 @@ class SendEmail{
     $email->addTo($to);
     $email->addContent("text/plain",$content);
 
-    $sendgrid = new \SendGrid($token);
+    $sendgrid = new \SendGrid(getenv('api_key'));
 
     try{
       $response = $sendgrid->send($email);
