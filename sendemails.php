@@ -1,12 +1,8 @@
-<script type='text/javascript' src='config.js'></script>
-<script type='text/javascript' src='script.js'></script>
 <?php
 require 'vendor/autoload.php';
 //$token='<script>document.write(token);</script>';
 class SendEmail{
   public static function SendMail($to,$subject,$content){
-
-   $token='<script>document.write(token);</script>';
    $email= new \SendGrid\Mail\Mail();
     $email->setFrom("shubhamvats830@gmail.com","Shubham Vats");
     $email->setSubject($subject);
