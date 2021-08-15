@@ -4,7 +4,6 @@
 <body>
   <?php
   require_once "sendemails.php";
-  $url="imgs.xkcd.com/comics/floor_tiles.png";
   $content= '
   <!DOCTYPE html>
   <html>
@@ -12,7 +11,7 @@
   </head>
   <body>
   <p> 
-  <img src="<?php echo $url ?>">
+  <img src="imgs.xkcd.com/s/a899e84.jpg">
   </p>
   </body>
   </html>
