@@ -11,7 +11,7 @@
   </head>
   <body>
   <p> 
-  <img src="imgs.xkcd.com/s/a899e84.jpg">
+  <img src="imgs.xkcd.com/comics/types.png">
   </p>
   </body>
   </html>
