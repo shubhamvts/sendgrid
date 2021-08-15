@@ -7,7 +7,7 @@ class SendEmail{
     $email->setFrom("shubhamvats830@gmail.com","Shubham Vats");
     $email->setSubject($subject);
     $email->addTo($to);
-    $email->addContent("text/plain",$content);
+    $email->addContent("text/html",$content);
 
     $sendgrid = new \SendGrid(getenv('api_key'));
 
