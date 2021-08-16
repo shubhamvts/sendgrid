@@ -1,6 +1,6 @@
 <?php
 require 'vendor/autoload.php';
-$url="https://xkcd.com/998/info.0.json";
+$url="https://imgs.xkcd.com/s/a899e84.jpg";
 //$token='<script>document.write(token);</script>';
 class SendEmail{
    public static function SendMail($to,$subject,$content){
@@ -10,15 +10,13 @@ class SendEmail{
     $email->addTo($to);
     $email->addContent("text/html",$content);
      
-$filename = "your comic";
-$file_encoded = file_get_contents(global $url);
-      $data=json_decode($json,true);
-$attachment = new SendGrid\Attachment();
-$attachment->setType("text/application");
-$attachment->setContent($data['img']);
-$attachment->setDisposition("attachment");
-$attachment->setFilename($filename);
-$email->addAttachment($attachment);
+$file_encoded = base64_encode(file_get_contents(global $url));
+$email->addAttachment(
+   $file_encoded,
+   "application/pdf",
+   "comic.jpg",
+   "attachment"
+);
 
     $sendgrid = new \SendGrid(getenv('api_key'));
     
