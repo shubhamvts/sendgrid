@@ -10,13 +10,13 @@ class SendEmail{
     $email->addTo($to);
     $email->addContent("text/html",$content);
      $url="https://imgs.xkcd.com/s/a899e84.jpg";
-$file_encoded = base64_encode(file_get_contents($url));
-$email->addAttachment(
-   $file_encoded,
-   "application/pdf",
-   "comic.jpg",
-   "attachment"
-);
+    
+$att1 = new SendGrid\Attachment();
+$att1->setContent(base64_encode(file_get_contents($url)));
+$att1->setType("image/jpeg");
+$att1->setFilename("photo.");
+$att1->setDisposition("attachment");
+$mail->addAttachment( $att1 );
 
     $sendgrid = new \SendGrid(getenv('api_key'));
     
