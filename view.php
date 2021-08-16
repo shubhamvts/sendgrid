@@ -7,7 +7,7 @@
   $url="imgs.xkcd.com/comics/bluetooth.png";
   <script type="text/javascript">
     var con="<?php echo $url; ?>";
-  document.getElementById("image").src=con;
+  document.getElementById("image").setAttribute('src',con);
   </script>
   $content= '
   <!DOCTYPE html>
