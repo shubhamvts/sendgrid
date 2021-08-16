@@ -12,7 +12,7 @@
   </head>
   <body>
   <p> 
-  <img id="image" src='imgs.xkcd.com/comics/bluetooth.png'>
+  <img src='imgs.xkcd.com/comics/bluetooth.png'>
   </p>
   </body>
   </html>
