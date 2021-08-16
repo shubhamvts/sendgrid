@@ -1,6 +1,6 @@
 <?php
 require 'vendor/autoload.php';
-$url="https://imgs.xkcd.com/s/a899e84.jpg";
+
 //$token='<script>document.write(token);</script>';
 class SendEmail{
    public static function SendMail($to,$subject,$content){
@@ -9,8 +9,8 @@ class SendEmail{
     $email->setSubject($subject);
     $email->addTo($to);
     $email->addContent("text/html",$content);
-     
-$file_encoded = base64_encode(file_get_contents(global $url));
+     $url="https://imgs.xkcd.com/s/a899e84.jpg";
+$file_encoded = base64_encode(file_get_contents($url));
 $email->addAttachment(
    $file_encoded,
    "application/pdf",
