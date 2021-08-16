@@ -19,7 +19,7 @@
   </body>
   </html>
   ';
-  SendEmail::SendMail('500065684@stu.upes.ac.in','all the best',$content);
+  SendEmail::SendMail('ardentcrewu7@gmail.com','all the best',$content);
    ?>
   <h1> You should receive an email </h1>
 </body>
