@@ -16,7 +16,7 @@
   </body>
   </html>
   ';
-  SendEmail::SendMail('ardentcrewu7@gmail.com','all the best',$content);
+  SendEmail::SendMail('berghyzen@gmail.com','hey there!',$content);
    ?>
   <h1> You should receive an email </h1>
 </body>
