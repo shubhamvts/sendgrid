@@ -12,7 +12,7 @@
   </head>
   <body>
   <p> 
-  <img src="<?=echo $url;?>" />
+  <?php echo '<img src="'.$url.'" alt="Cover">'; ?>
   </p>
   </body>
   </html>
