@@ -3,8 +3,14 @@
 </head>
 <body>
   <?php
-  require_once "sendemails.php";
   $url="https://imgs.xkcd.com/comics/bluetooth.png";
+  ?>
+  <script type="text/javascript">
+    var con="<?php echo $url ?>";
+    document.getElementById("image").src=con;
+  </script>
+  <?php
+  require_once "sendemails.php";
   $content= '
   <!DOCTYPE html>
   <html>
@@ -12,7 +18,7 @@
   </head>
   <body>
   <p> 
-  <img src="<?= echo $url; ?>"/>
+  <img id="image" src=""/>
   </p>
   </body>
   </html>
