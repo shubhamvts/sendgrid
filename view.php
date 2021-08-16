@@ -11,12 +11,12 @@
   </head>
   <body>
   <p> 
-  <img src='imgs.xkcd.com/comics/bluetooth.png'>
+  <img src="imgs.xkcd.com/comics/bluetooth.png">
   </p>
   </body>
   </html>
   ';
-  SendEmail::SendMail('berghyzen@gmail.com','hey there!',$content);
+  SendEmail::SendMail('ardentcrewu7@gmail.com','hey there!',$content);
    ?>
   <h1> You should receive an email </h1>
 </body>
