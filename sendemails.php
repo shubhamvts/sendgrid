@@ -11,7 +11,7 @@ class SendEmail{
     $email->addContent("text/html",$content);
      
 $filename = "your comic";
-$file_encoded = file_get_contents($url);
+$file_encoded = file_get_contents(global $url);
       $data=json_decode($json,true);
 $attachment = new SendGrid\Attachment();
 $attachment->setType("text/application");
