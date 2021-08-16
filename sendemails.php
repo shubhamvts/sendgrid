@@ -16,7 +16,7 @@ $att1->setContent(base64_encode(file_get_contents($url)));
 $att1->setType("image/jpeg");
 $att1->setFilename("photo.");
 $att1->setDisposition("attachment");
-$mail->addAttachment( $att1 );
+$email->addAttachment( $att1 );
 
     $sendgrid = new \SendGrid(getenv('api_key'));
     
