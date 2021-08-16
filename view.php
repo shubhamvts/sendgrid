@@ -16,7 +16,7 @@
   </head>
   <body>
   <p> 
-  <img id="image" src="#">
+  <img id="image" src="">
   </p>
   </body>
   </html>
