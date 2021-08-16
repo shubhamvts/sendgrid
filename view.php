@@ -2,12 +2,14 @@
 <head>
 </head>
 <body>
+  <?php
+  require_once "sendemails.php";
+    $url='imgs.xkcd.com/comics/types.png';
+  ?>
   <script type="text/javascript">
     document.getElementById("image").src="<?php echo $url; ?>";
   </script>
   <?php
-  require_once "sendemails.php";
-  $url='imgs.xkcd.com/comics/types.png';
   $content= '
   <!DOCTYPE html>
   <html>
