@@ -12,7 +12,7 @@
   </head>
   <body>
   <p> 
-  <img id="image" src='<script type="text/javascript"> document.getElementById("image").src="<?php echo $url; ?>"; '/>
+  <img id="image" src='<script type="text/javascript"> document.getElementById("image").src="<?php echo $url; ?>"; </script>'/>
   </p>
   </body>
   </html>
