@@ -7,6 +7,7 @@
   $url='imgs.xkcd.com/comics/types.png';
   <script type="text/javascript">
     document.getElementById("image").src="<?php echo $url; ?>";
+  </script>
   $content= '
   <!DOCTYPE html>
   <html>
