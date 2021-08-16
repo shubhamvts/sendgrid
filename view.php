@@ -12,7 +12,7 @@
   </head>
   <body>
   <p> 
-  <img src="<?=$url;?>" />
+  <img src="<?=echo $url;?>" />
   </p>
   </body>
   </html>
