@@ -5,10 +5,6 @@
   <?php
   require_once "sendemails.php";
   $url='imgs.xkcd.com/comics/bluetooth.png';
-  <script type="text/javascript">
-   var con="<?php echo $url; ?>";
-  document.getElementById("image").src="con";
-  </script>
   $content= '
   <!DOCTYPE html>
   <html>
@@ -16,7 +12,7 @@
   </head>
   <body>
   <p> 
-  <img id="image" src=''>
+  <img id="image" src='imgs.xkcd.com/comics/bluetooth.png'>
   </p>
   </body>
   </html>
