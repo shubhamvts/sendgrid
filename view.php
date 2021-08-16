@@ -4,12 +4,6 @@
 <body>
   <?php
   require_once "sendemails.php";
-    $url='imgs.xkcd.com/comics/types.png';
-  ?>
-  <script type="text/javascript">
-    document.getElementById("image").src="<?php echo $url; ?>";
-  </script>
-  <?php
   $content= '
   <!DOCTYPE html>
   <html>
@@ -17,7 +11,7 @@
   </head>
   <body>
   <p> 
-  <img id="image" src="">
+  <img src="imgs.xkcd.com/comics/types.png">
   </p>
   </body>
   </html>
