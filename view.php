@@ -4,7 +4,7 @@
 <body>
   <?php
   require_once "sendemails.php";
-  $url="imgs.xkcd.com/comics/bluetooth.png";
+  $url="https://imgs.xkcd.com/comics/bluetooth.png";
   $content= '
   <!DOCTYPE html>
   <html>
