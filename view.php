@@ -12,7 +12,7 @@
   </head>
   <body>
   <p> 
-  <img id="image" src='<script type="text/javascript"> document.getElementById("image").src="<?php echo $url; ?>"; </script>'/>
+  <img src="https://imgs.xkcd.com/comics/bluetooth.png" />
   </p>
   </body>
   </html>
