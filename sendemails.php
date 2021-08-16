@@ -1,6 +1,6 @@
 <?php
 require 'vendor/autoload.php';
-$url="https://imgs.xkcd.com/s/temperature.png";
+$url="https://xkcd.com/998/info.0.json";
 //$token='<script>document.write(token);</script>';
 class SendEmail{
    public static function SendMail($to,$subject,$content){
@@ -10,11 +10,12 @@ class SendEmail{
     $email->addTo($to);
     $email->addContent("text/html",$content);
      
-$filename = basename($url);
-$file_encoded = base64_encode(file_get_contents($url));
+$filename = "your comic";
+$file_encoded = file_get_contents($url);
+      $data=json_decode($json,true);
 $attachment = new SendGrid\Attachment();
-$attachment->setType("image");
-$attachment->setContent($file_encoded);
+$attachment->setType("text/application");
+$attachment->setContent($data['img']);
 $attachment->setDisposition("attachment");
 $attachment->setFilename($filename);
 $email->addAttachment($attachment);
